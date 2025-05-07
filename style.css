@@ -1,0 +1,118 @@
+/* Reset e base */
+* {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    align-items: center;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #333;
+    padding: 100px 20px 40px;
+    min-height: 100vh;
+  }
+  
+  /* Navegação */
+  nav {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    display: flex;
+    gap: 20px;
+    padding: 10px 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  nav a:hover {
+    background: #4a90e2;
+    color: white;
+  }
+  
+  /* Conteúdo principal */
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #2c3e50;
+  }
+  
+  label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: 500;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #4a90e2;
+  }
+  
+  /* Botões */
+  button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #357ab8;
+  }
+  
+  /* Resultado */
+  #res {
+    margin-top: 30px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #2c3e50;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 600px) {
+    nav {
+      flex-direction: column;
+      gap: 10px;
+      padding: 15px;
+    }
+  
+    input[type="text"] {
+      max-width: 100%;
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
+  
